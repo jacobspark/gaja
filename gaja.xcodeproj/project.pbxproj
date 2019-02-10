@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FFBB952A7C86FC0CCD4134 /* Pods_gaja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D093AB87BA6830B003D01A62 /* Pods_gaja.framework */; };
+		167FAB6B220E4A43008FF9EF /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167FAB6A220E4A43008FF9EF /* SwipeTableViewController.swift */; };
+		16AFBFA522010BCB00F00A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFBFA422010BCB00F00A18 /* AppDelegate.swift */; };
+		16AFBFA722010BCB00F00A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFBFA622010BCB00F00A18 /* ViewController.swift */; };
+		16AFBFAA22010BCB00F00A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AFBFA822010BCB00F00A18 /* Main.storyboard */; };
+		16AFBFAC22010BCC00F00A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16AFBFAB22010BCC00F00A18 /* Assets.xcassets */; };
+		16AFBFAF22010BCC00F00A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AFBFAD22010BCC00F00A18 /* LaunchScreen.storyboard */; };
+		16DC0F62220CE4AA0055C804 /* PlacesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC0F61220CE4AA0055C804 /* PlacesListTableViewController.swift */; };
+		16E25AD4220F2FD200DCB8D8 /* ChooseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E25AD3220F2FD200DCB8D8 /* ChooseTableViewController.swift */; };
+		16E609792207790F00D8BFA7 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E609782207790F00D8BFA7 /* Gradient.swift */; };
+		16E6097D2207B4C700D8BFA7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E6097C2207B4C700D8BFA7 /* MapViewController.swift */; };
+		16FF7296220BA90100A01CC9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF7295220BA90100A01CC9 /* Data.swift */; };
+		16FF729A220BCC2900A01CC9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF7299220BCC2900A01CC9 /* Category.swift */; };
+		16FF729E220C6C5C00A01CC9 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF729D220C6C5C00A01CC9 /* CategoryTableViewController.swift */; };
+		16FF72A1220C6FDD00A01CC9 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF72A0220C6FDD00A01CC9 /* DesignableButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		167FAB6A220E4A43008FF9EF /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		16AFBFA122010BCB00F00A18 /* gaja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AFBFA422010BCB00F00A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16AFBFA622010BCB00F00A18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16AFBFA922010BCB00F00A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16AFBFAB22010BCC00F00A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16AFBFAE22010BCC00F00A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16AFBFB022010BCC00F00A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16DC0F61220CE4AA0055C804 /* PlacesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListTableViewController.swift; sourceTree = "<group>"; };
+		16E25AD3220F2FD200DCB8D8 /* ChooseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTableViewController.swift; sourceTree = "<group>"; };
+		16E609782207790F00D8BFA7 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		16E6097C2207B4C700D8BFA7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		16FF7295220BA90100A01CC9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		16FF7299220BCC2900A01CC9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		16FF729D220C6C5C00A01CC9 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		16FF72A0220C6FDD00A01CC9 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		5D21A4E1FEE7A42EB34493B1 /* Pods-gaja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaja.release.xcconfig"; path = "Pods/Target Support Files/Pods-gaja/Pods-gaja.release.xcconfig"; sourceTree = "<group>"; };
+		6FD46089622CE563D5F89AE2 /* Pods-gaja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gaja/Pods-gaja.debug.xcconfig"; sourceTree = "<group>"; };
+		D093AB87BA6830B003D01A62 /* Pods_gaja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16AFBF9E22010BCB00F00A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FFBB952A7C86FC0CCD4134 /* Pods_gaja.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		167FAB6C220E56DF008FF9EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16AFBFA422010BCB00F00A18 /* AppDelegate.swift */,
+				16AFBFAB22010BCC00F00A18 /* Assets.xcassets */,
+				16AFBFAD22010BCC00F00A18 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16AFBF9822010BCB00F00A18 = {
+			isa = PBXGroup;
+			children = (
+				16AFBFA322010BCB00F00A18 /* gaja */,
+				16AFBFA222010BCB00F00A18 /* Products */,
+				66F46BBBF7A2F48A3DECFF05 /* Pods */,
+				F4D0F8EE1E70CEB1761D6668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16AFBFA222010BCB00F00A18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16AFBFA122010BCB00F00A18 /* gaja.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16AFBFA322010BCB00F00A18 /* gaja */ = {
+			isa = PBXGroup;
+			children = (
+				16AFBFB022010BCC00F00A18 /* Info.plist */,
+				167FAB6C220E56DF008FF9EF /* Supporting Files */,
+				16FF729F220C6FA800A01CC9 /* IBDesignables */,
+				16FF7297220BCBAF00A01CC9 /* View */,
+				16FF7298220BCBBD00A01CC9 /* Controllers */,
+				16FF7294220BA8C300A01CC9 /* Data Model */,
+			);
+			path = gaja;
+			sourceTree = "<group>";
+		};
+		16FF7294220BA8C300A01CC9 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				16FF7295220BA90100A01CC9 /* Data.swift */,
+				16FF7299220BCC2900A01CC9 /* Category.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		16FF7297220BCBAF00A01CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16AFBFA822010BCB00F00A18 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16FF7298220BCBBD00A01CC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16AFBFA622010BCB00F00A18 /* ViewController.swift */,
+				16E6097C2207B4C700D8BFA7 /* MapViewController.swift */,
+				16FF729D220C6C5C00A01CC9 /* CategoryTableViewController.swift */,
+				16DC0F61220CE4AA0055C804 /* PlacesListTableViewController.swift */,
+				167FAB6A220E4A43008FF9EF /* SwipeTableViewController.swift */,
+				16E25AD3220F2FD200DCB8D8 /* ChooseTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16FF729F220C6FA800A01CC9 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				16E609782207790F00D8BFA7 /* Gradient.swift */,
+				16FF72A0220C6FDD00A01CC9 /* DesignableButton.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		66F46BBBF7A2F48A3DECFF05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FD46089622CE563D5F89AE2 /* Pods-gaja.debug.xcconfig */,
+				5D21A4E1FEE7A42EB34493B1 /* Pods-gaja.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4D0F8EE1E70CEB1761D6668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D093AB87BA6830B003D01A62 /* Pods_gaja.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16AFBFA022010BCB00F00A18 /* gaja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16AFBFB322010BCC00F00A18 /* Build configuration list for PBXNativeTarget "gaja" */;
+			buildPhases = (
+				EF62E9D3CB7FA7CF848DD8A5 /* [CP] Check Pods Manifest.lock */,
+				16AFBF9D22010BCB00F00A18 /* Sources */,
+				16AFBF9E22010BCB00F00A18 /* Frameworks */,
+				16AFBF9F22010BCB00F00A18 /* Resources */,
+				554E3A1C4D52B54CEEE07987 /* [CP] Embed Pods Frameworks */,
+				F56BB87335C5D4894E7F7188 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gaja;
+			productName = gaja;
+			productReference = 16AFBFA122010BCB00F00A18 /* gaja.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16AFBF9922010BCB00F00A18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jacob Park";
+				TargetAttributes = {
+					16AFBFA022010BCB00F00A18 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 16AFBF9C22010BCB00F00A18 /* Build configuration list for PBXProject "gaja" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16AFBF9822010BCB00F00A18;
+			productRefGroup = 16AFBFA222010BCB00F00A18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16AFBFA022010BCB00F00A18 /* gaja */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16AFBF9F22010BCB00F00A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AFBFAF22010BCC00F00A18 /* LaunchScreen.storyboard in Resources */,
+				16AFBFAC22010BCC00F00A18 /* Assets.xcassets in Resources */,
+				16AFBFAA22010BCB00F00A18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554E3A1C4D52B54CEEE07987 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gaja/Pods-gaja-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gaja/Pods-gaja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF62E9D3CB7FA7CF848DD8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gaja-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56BB87335C5D4894E7F7188 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gaja/Pods-gaja-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gaja/Pods-gaja-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16AFBF9D22010BCB00F00A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FF7296220BA90100A01CC9 /* Data.swift in Sources */,
+				167FAB6B220E4A43008FF9EF /* SwipeTableViewController.swift in Sources */,
+				16DC0F62220CE4AA0055C804 /* PlacesListTableViewController.swift in Sources */,
+				16AFBFA722010BCB00F00A18 /* ViewController.swift in Sources */,
+				16AFBFA522010BCB00F00A18 /* AppDelegate.swift in Sources */,
+				16FF729E220C6C5C00A01CC9 /* CategoryTableViewController.swift in Sources */,
+				16E609792207790F00D8BFA7 /* Gradient.swift in Sources */,
+				16E6097D2207B4C700D8BFA7 /* MapViewController.swift in Sources */,
+				16FF729A220BCC2900A01CC9 /* Category.swift in Sources */,
+				16FF72A1220C6FDD00A01CC9 /* DesignableButton.swift in Sources */,
+				16E25AD4220F2FD200DCB8D8 /* ChooseTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16AFBFA822010BCB00F00A18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16AFBFA922010BCB00F00A18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16AFBFAD22010BCC00F00A18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16AFBFAE22010BCC00F00A18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16AFBFB122010BCC00F00A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16AFBFB222010BCC00F00A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16AFBFB422010BCC00F00A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD46089622CE563D5F89AE2 /* Pods-gaja.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7277UP7G5;
+				INFOPLIST_FILE = gaja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpark.gaja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16AFBFB522010BCC00F00A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D21A4E1FEE7A42EB34493B1 /* Pods-gaja.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7277UP7G5;
+				INFOPLIST_FILE = gaja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpark.gaja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16AFBF9C22010BCB00F00A18 /* Build configuration list for PBXProject "gaja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AFBFB122010BCC00F00A18 /* Debug */,
+				16AFBFB222010BCC00F00A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16AFBFB322010BCC00F00A18 /* Build configuration list for PBXNativeTarget "gaja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AFBFB422010BCC00F00A18 /* Debug */,
+				16AFBFB522010BCC00F00A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16AFBF9922010BCB00F00A18 /* Project object */;
+}
