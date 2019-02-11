@@ -63,6 +63,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
                 print("JSON: \(json)") // serialized json response
             }
             
+            
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 print("Data: \(utf8Text)") // original server data as UTF8 string
             }
@@ -80,13 +81,20 @@ extension MapViewController: CLLocationManagerDelegate {
         print("Hello: \(location.coordinate.latitude), \(location.coordinate.longitude)")
         let parameters: Parameters = [
             "location" : "\(location.coordinate.latitude), \(location.coordinate.longitude)",
-            "radius" : 50000,
+            "radius" : 1000,
             "key" : PLACES_KEY,
-            "keyword" : "chipotle"
         ]
-        getRequest("chipotle", parameters)
+        if places?.isEmpty ?? true {
+            let alert = UIAlertController(title: "No places added", message: "Please add places in the category", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Understood", style: .default, handler: nil))
+        }
+        else {
+            for places in places! {
+                let eachLocationInput = places.title
+                getRequest(eachLocationInput, parameters)
+            }
+        }
 
-        
         let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude,
                                               longitude: location.coordinate.longitude,
                                               zoom: zoomLevel)
