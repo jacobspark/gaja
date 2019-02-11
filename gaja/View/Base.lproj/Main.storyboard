@@ -224,16 +224,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-vE-3OQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gys-dn-Uum" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gys-dn-Uum" firstAttribute="top" secondItem="tpU-Ov-hjc" secondAttribute="top" id="I7n-Sm-crI"/>
+                            <constraint firstItem="gys-dn-Uum" firstAttribute="trailing" secondItem="tpU-Ov-hjc" secondAttribute="trailing" id="P86-sH-h2P"/>
+                            <constraint firstItem="gys-dn-Uum" firstAttribute="leading" secondItem="tpU-Ov-hjc" secondAttribute="leading" id="cdf-rz-WLf"/>
+                            <constraint firstItem="gys-dn-Uum" firstAttribute="bottom" secondItem="tpU-Ov-hjc" secondAttribute="bottom" id="mmM-Ke-jcm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tpU-Ov-hjc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Locations" id="c1U-aB-gVi"/>
                     <connections>
+                        <outlet property="mapView" destination="gys-dn-Uum" id="fX8-DJ-Qxb"/>
                         <outlet property="searchDisplayController" destination="1th-wa-WIL" id="eAu-mP-hY5"/>
                     </connections>
                 </viewController>

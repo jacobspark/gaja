@@ -1,4 +1,3 @@
-//
 //  PlacesListTableViewController.swift
 //  gaja
 //
