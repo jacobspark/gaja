@@ -7,6 +7,7 @@ Gaja allows the user to create a category of desired locations or attractions (R
 ### Prerequisites
 * **Cocoapods** 
 * **XCode 10**
+* **Google Maps API Key (GoogleMaps iOS SDK and Google Places API Enabled)**
 
 ### Installation
 To install Cocoapods, open terminal and copy paste the following command:
@@ -16,6 +17,14 @@ sudo gem install cocoapods
 Documentation for Cocoapods can be found in this [link](https://guides.cocoapods.org/using/getting-started.html)
 
 To install XCode, open your App Store and install the latest version of XCode.
+
+Locate AppDelegates.swift and MapViewController.swift in 
+```
+gaja/Supporting\ Files/AppDelegate.swift
+gaja/Controllers/MapViewController.swift
+```
+Add your API key where specified.
+
 
 The current app only supports iPhones.
 
