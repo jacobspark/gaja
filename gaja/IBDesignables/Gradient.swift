@@ -2,7 +2,6 @@
 //  Gradient.swift
 //  gaja
 //
-//  Created by Jacob Park on 2/3/19.
 //  Copyright © 2019 Jacob Park. All rights reserved.
 //
 

@@ -122,9 +122,9 @@
 				16AFBFA622010BCB00F00A18 /* ViewController.swift */,
 				16E6097C2207B4C700D8BFA7 /* MapViewController.swift */,
 				16FF729D220C6C5C00A01CC9 /* CategoryTableViewController.swift */,
+				16E25AD3220F2FD200DCB8D8 /* ChooseTableViewController.swift */,
 				16DC0F61220CE4AA0055C804 /* PlacesListTableViewController.swift */,
 				167FAB6A220E4A43008FF9EF /* SwipeTableViewController.swift */,
-				16E25AD3220F2FD200DCB8D8 /* ChooseTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

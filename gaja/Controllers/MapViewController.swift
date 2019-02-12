@@ -1,3 +1,4 @@
+//
 //  MapViewController.swift
 //  gaja
 //
@@ -9,11 +10,15 @@ import GoogleMaps
 import GooglePlaces
 import RealmSwift
 import Alamofire
+import SwiftyJSON
 
 class MapViewController: UIViewController, GMSMapViewDelegate {
     
+    // GooglePlaces Nearby Search URL
     let PLACES_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+    // GooglePlaces API Key
     let PLACES_KEY = "AIzaSyD-yLw0a8Nxel5oXotgqHbqI5tIA9t2Ewo"
+    
     let realm = try! Realm()
     var places: Results<Data>?
     
@@ -24,11 +29,14 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
+    var selectedCategory : Category? {
+        didSet {
+            loadItems()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadItems()
-    
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -37,37 +45,41 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         locationManager.delegate = self
         
         placesClient = GMSPlacesClient.shared()
-        
-
-        // An array to hold the list of likely places.
-        // var likelyPlaces: [GMSPlace] = []
-        
-        // The currently selected place.
-        // var selectedPlace: GMSPlace?
-
-        // Do any additional setup after loading the view.
     }
     func loadItems() {
-        places = realm.objects(Data.self)
+        places = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
     }
     
+    // HTTP GET request
     func getRequest(_ searchPlace: String, _ parameters: Parameters) {
-        var newParameters = parameters
-        newParameters["keyword"] = searchPlace
+        var newParameters = parameters              // passed in parameters is const by default
+        newParameters["keyword"] = searchPlace      // 
+        
         Alamofire.request(PLACES_URL, method: .get, parameters: newParameters).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
             print("Result: \(response.result)")                         // response serialization result
             
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            let json: JSON = JSON(response.result.value!)
+            for (_, subJson):(String, JSON) in json["results"] {
+                if let title = subJson["name"].string {
+                    let latitudes = subJson["geometry"]["location"]["lat"].double
+                    let longitudes = subJson["geometry"]["location"]["lng"].double
+                    self.addMarker(latitudes!, longitudes!, title)
+                }
             }
-            
             
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 print("Data: \(utf8Text)") // original server data as UTF8 string
             }
         }
+    }
+    // Adds marker to the select location, accepts latitute/longitude and name of location
+    func addMarker(_ latitudes: Double, _ longitutes: Double, _ title: String) {
+        let position = CLLocationCoordinate2D(latitude: latitudes, longitude: longitutes)
+        let marker = GMSMarker(position: position)
+        marker.title = title
+        marker.map = mapView
     }
     
 }
@@ -78,10 +90,9 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location: CLLocation = locations.last!
         print("Location: \(location)")
-        print("Hello: \(location.coordinate.latitude), \(location.coordinate.longitude)")
         let parameters: Parameters = [
             "location" : "\(location.coordinate.latitude), \(location.coordinate.longitude)",
-            "radius" : 1000,
+            "radius" : 1500,
             "key" : PLACES_KEY,
         ]
         if places?.isEmpty ?? true {
@@ -89,7 +100,7 @@ extension MapViewController: CLLocationManagerDelegate {
             alert.addAction(UIAlertAction(title: "Understood", style: .default, handler: nil))
         }
         else {
-            for places in places! {
+            for places in places! { // Loops through Realm object
                 let eachLocationInput = places.title
                 getRequest(eachLocationInput, parameters)
             }
@@ -125,13 +136,19 @@ extension MapViewController: CLLocationManagerDelegate {
             print("Location status is OK.")
         }
         mapView.isMyLocationEnabled = true
-        mapView.settings.myLocationButton = true
+        mapView.settings.myLocationButton = true    // Shows current location as blue dot
     }
     
     // Handle location manager errors.
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
+    }
+    
+    // Resets all existing markers after leaving the map
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        mapView.clear()
     }
     
 }

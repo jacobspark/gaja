@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  gaja
 //
-//  Created by Jacob Park on 1/29/19.
 //  Copyright © 2019 Jacob Park. All rights reserved.
 //
 
@@ -18,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+                
         do {
             _ = try Realm()
         } catch {

@@ -2,7 +2,6 @@
 //  ChooseTableViewController.swift
 //  gaja
 //
-//  Created by Jacob Park on 2/9/19.
 //  Copyright © 2019 Jacob Park. All rights reserved.
 //
 
@@ -16,16 +15,16 @@ class ChooseTableViewController: CategoryTableViewController {
         loadCategories()
     }
 
-    
+    // Override functions for segue
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ToMap", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        _ = segue.destination as! MapViewController
+        let destinationVC = segue.destination as! MapViewController
         
-//        if let indexPath = tableView.indexPathForSelectedRow {
-//            destinationVC.selectedCategory = categories?[indexPath.row]
-//        }
+        if let indexPath = tableView.indexPathForSelectedRow {  // Passes data only in selected category
+            destinationVC.selectedCategory = categories?[indexPath.row]
+        }
     }
 }

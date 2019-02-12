@@ -1,7 +1,7 @@
+//
 //  PlacesListTableViewController.swift
 //  gaja
 //
-//  Created by Jacob Park on 2/7/19.
 //  Copyright © 2019 Jacob Park. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ class PlacesListTableViewController: SwipeTableViewController {
     var places: Results<Data>?
     let realm = try! Realm()
     
-    var selectedCategory : Category? {
+    var selectedCategory : Category? {  // Passed in through segue
         didSet {
             loadItems()
         }

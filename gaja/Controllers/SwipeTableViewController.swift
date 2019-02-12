@@ -2,7 +2,6 @@
 //  SwipeTableViewController.swift
 //  gaja
 //
-//  Created by Jacob Park on 2/8/19.
 //  Copyright © 2019 Jacob Park. All rights reserved.
 //
 
