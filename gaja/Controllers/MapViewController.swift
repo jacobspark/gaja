@@ -17,8 +17,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     // GooglePlaces Nearby Search URL
     let PLACES_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     // GooglePlaces API Key
-    let PLACES_KEY = "AIzaSyD-yLw0a8Nxel5oXotgqHbqI5tIA9t2Ewo"
-    
+    let PLACES_KEY = "EnterGooglePlacesAPIHere"
+        
     let realm = try! Realm()
     var places: Results<Data>?
     

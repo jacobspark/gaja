@@ -24,8 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Error initializing new Realm, \(error)")
         }
         
-        GMSServices.provideAPIKey("AIzaSyBhL1bAvCDjR8UlHYoz5wPPeBn7OAWibYE")
-        GMSPlacesClient.provideAPIKey("AIzaSyD-yLw0a8Nxel5oXotgqHbqI5tIA9t2Ewo")
+        // Uncomment & Enter Google Maps iOS API Key here
+        GMSServices.provideAPIKey("EnterHere")
+        // Uncomment & Enter Google Places API Key here
+        GMSPlacesClient.provideAPIKey("EnterHere")
         
         return true
     }
